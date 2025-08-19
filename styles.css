@@ -1,0 +1,161 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;    
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+h1 {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    text-align: center;
+}
+
+.info-text {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.game-score-container {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.game-score-container img {
+    height: 160px;
+}
+
+.game-score {
+    height: max-content;
+    width: max-content;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.game-status-victory,
+.game-journal-victory {
+    background-color: #91bb91;
+}
+
+.game-status-defeat,
+.game-journal-defeat {
+    background-color: #be828c;
+}
+
+.game-status-draw,
+.game-journal-draw {
+    background-color: #a2a8ad;
+}
+
+.human-game-status,
+.computer-game-status {
+    padding: 20px;
+    width: 100px;
+    height: fit-content;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.choice-buttons-container {
+    height: fit-content;
+    width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.choice-buttons-container img {
+    height: 60%;
+}
+
+#rockButton,
+#paperButton,
+#scissorsButton {
+    width: 180px;
+    height: 160px;
+    background-color: aliceblue;
+    border-radius: 25px;
+    border: 2px solid black;
+    transition: all 500ms ease;
+}
+
+#rockButton:focus,
+#paperButton:focus,
+#scissorsButton:focus {
+    background-color: #d6f0d5;
+}
+
+#rockButton:hover,
+#paperButton:hover,
+#scissorsButton:hover {
+    background-color: #c3d7ec;
+    border: 2px dashed black;
+}
+
+.choice-button-clicked {
+    transform: scale(1.1);
+    transition: transform 100ms ease;
+}
+
+.game-journal {
+    width: 780px;
+    min-height: 240px;
+    height: fit-content;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: aliceblue;
+    flex-wrap: wrap;    
+}
+
+.game-journal-record {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 140px;
+    height: 200px;
+    background-color: #c8eafa;
+}
+
+.game-journal-victory,
+.game-journal-defeat,
+.game-journal-draw {
+    width: 100%;
+    height: 48%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;   
+}
+
+.game-journal-record img {
+    height: 60%;
+}
