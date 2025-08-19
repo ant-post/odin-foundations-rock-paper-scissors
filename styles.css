@@ -103,7 +103,7 @@ h1 {
 #rockButton:focus,
 #paperButton:focus,
 #scissorsButton:focus {
-    background-color: #d6f0d5;
+    background-color: c2ebe2;
 }
 
 #rockButton:hover,
